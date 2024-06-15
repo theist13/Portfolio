@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #000; /* Background color set to black */
+            color: #fff; /* Text color set to white */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333; /* Slightly lighter background for the container */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .project {
+            margin-bottom: 40px;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .project h2 {
+            margin: 10px 0;
+        }
+        .project p {
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: none; /* Hide all videos initially */
+        }
+        .video-container iframe.active {
+            display: block; /* Display only the active video */
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #f00; /* Red color for the message */
+        }
+    </style>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="project">
+            <h1>Ringzero Game Studio</h1>
+            <p>The company that provides services in game production.</p>
+            <p> <br></p>
+            <h2>Totemdefender</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/-cArZlEtkRM?si=PUdHwvWIYXD66oMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>About the Project</h3>
+            <p>"The tower defense game project offers an immersive gaming experience where players defend against waves of enemies using strategic placement of towers. The game includes a watch ad system for rewards, in-app purchases, and receipt validation through a Node.js backend.</p>
+            <h2>Responsibilities:</h2>
+            <ul>
+                <li><strong>Implement Watch Ad System:</strong>
+                    <ul>
+                        <li>Develop a system allowing players to watch ads in exchange for rewards such as in-game currency, power-ups, or cosmetic items.</li>
+                        <li>Ensure a cooldown timer is managed by the backend to regulate the frequency of ad watches for each player.</li>
+                    </ul>
+                </li>
+                <li><strong>Integrate In-App Purchases:</strong>
+                    <ul>
+                        <li>Set up secure payment gateways for players to purchase in-game items, upgrades, or currency.</li>
+                        <li>Design and implement a user-friendly interface for browsing and purchasing items.</li>
+                    </ul>
+                </li>
+                <li><strong>Develop Receipt Validation:</strong>
+                    <ul>
+                        <li>Create a backend service to validate purchase receipts sent by the game client.</li>
+                        <li>Ensure the validation process confirms the genuineness and integrity of each purchase.</li>
+                    </ul>
+                </li>
+                <li><strong>Handle Item Distribution:</strong>
+                    <ul>
+                        <li>Upon receipt validation, develop functionality to distribute purchased items or currency to the player’s account in real-time.</li>
+                        <li>Ensure players receive their items instantly to enhance their gaming experience.</li>
+                    </ul>
+                </li>
+                <li><strong>Create Sound System:</strong>
+                    <ul>
+                        <li>Develop a dynamic sound system that enhances the gaming experience with background music, sound effects, and voice-overs.</li>
+                        <li>Retrieve sound data from the backend, allowing for updates and customization based on game events or player actions.</li>
+                        <li>Ensure the sound system integrates seamlessly with other game elements and adjusts dynamically to in-game events.</li>
+                    </ul>
+                </li>
+                <li><strong>Fix Bugs:</strong>
+                    <ul>
+                        <li>Identify and resolve bugs reported by users or found during testing.</li>
+                        <li>Ensure all bug fixes maintain game stability and performance.</li>
+                        <li>Conduct thorough testing after fixes to prevent regressions.</li>
+                    </ul>
+                </li>
+            </ul>
+        
+            <h2>Security and Reliability:</h2>
+            <ul>
+                <li>Encrypt sensitive data transmissions, including receipts and sound data, to ensure security.</li>
+                <li>Implement anti-fraud measures and rate limiting to prevent abuse and maintain fairness.</li>
+                <li>Log all transactions, errors, and sound system events comprehensively for effective monitoring and debugging.</li>
+            </ul>
+        
+            <p>The tower defense game leverages modern technologies and backend infrastructure to deliver a seamless and enjoyable gaming experience with rewarding progression options for players.</p>
+
+            <p> <br></p>
+            <p>While I've completed additional projects, I'm unable to disclose further details due to confidentiality agreements. However, rest assured that everything is in place and ready to go!</p>
+        <a href="portfolio.html" class="back-button">Back to Portfolio</a>
+    
+    </div>
+
+    </div>
+      
+</body>
+</html>
