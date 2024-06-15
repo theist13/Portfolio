@@ -1,0 +1,13 @@
+{
+    "title": "MY EDUCATION",
+    "education": [
+        {
+            "place": "Silpakorn University Faculty of information and Communication Technology",
+            "time": "University 2016-2020"
+        },
+        {
+            "place": "Kanchanapisek Wittayalai Nakhon Pathom Math-Eng",
+            "time": "Highschool 2009-2015"
+        }
+    ]
+}

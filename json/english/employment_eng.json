@@ -1,0 +1,32 @@
+{
+    "title": "MY EMPLOYMENT HISTORY",
+    "employment": [
+        {
+            "company": "Unity Developer at Ringzero Game Studio",
+            "time": "January 2023 - Present",
+            "job": "Unity Developer",
+            "detail": [
+                "Contributed to the development of games from concept to release,focusing on gameplay mechanics, UI/UX, and performance optimization.",
+                "Contributed to the integration of mini-games working with backend developers to implement necessary APIs and features for seamless user experience.",
+                "Led the integration of data storage solutions using Nodejs and MongoDB for online games, ensuring efficient and scalable handling of player data, game progress, and invgame transactions.",
+                "Collaborated with artists, designers, and other developers to ensurecohesive integration of assets and functionalities.",
+                "Implement animation from assets into unity animator controller,animation timeline and blendtree to make smooth gameplay.",
+                "Conducted regular testing and debugging to identify and resolve issues,ensuring a smooth and enjoyable player experience.",
+                "Intregrate external debugging tools, e.g., ADB, Chrome Remote Devices.Implemented Unity Addressables to optimize asset management and resource loading in largeascale projects."
+            ]
+        },
+        {
+            "company": "Unity Developer at BlueoceanTechnology",
+            "time": "September 2021 - December 2022",
+            "job": "Unity Developer",
+            "detail": [
+                "Developed vehicle controller in mini game and test drive simulator utilizingwheel controller, enhancing user experience and control precision.",
+                "Designed and implemented virtual reality experiences for Oculus Quest platform, focusing on immersive tours of Kubota farms. Leveraged WebGL technology to create interactive web applications",
+                "allowing users to customize house materials and textures in real-time.",
+                "Developed interactive WebGL applications allowing users to explore festivals and showcases by clicking on various elements within the environment.",
+                "Implemented asset bundling techniques to efficiently load pictures and videos, optimizing the performance and loading times of the WebGL applications.",
+                "Collaborated with designers and artists to create visually engaging environments and assets, ensuring a compelling user experience."
+            ]
+        }
+    ]
+}
