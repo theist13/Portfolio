@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #000; /* Background color set to black */
+            color: #fff; /* Text color set to white */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333; /* Slightly lighter background for the container */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .project {
+            margin-bottom: 40px;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .project h2 {
+            margin: 10px 0;
+        }
+        .project p {
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: none; /* Hide all videos initially */
+        }
+        .video-container iframe.active {
+            display: block; /* Display only the active video */
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #f00; /* Red color for the message */
+        }
+    </style>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="project">
+            <h1>Blue ocean technology co., ltd.</h1>
+            <p>The company that provides services in the metaverse</p>
+            <p> <br></p>
+            <h2>Kubota Racing Game</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/51RhuHT-1Sw?si=2MGPUYynSs-NiQfc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>About the Project</h3>
+            <p>"Kubota Racing Game" is a thrilling racing game where players drive Kubota vehicles through challenging tracks, aiming to collect products and overcome obstacles within a limited time frame to score as high as possible.</p>
+            <h4>Key Features:</h4>
+            <ul>
+                <li><strong>Steering Wheel Control</strong>: Steering Wheel Control: Experience realistic driving with responsive steering wheel controls.</li>
+                <li><strong>Time-Limited Gameplay</strong>: Race against the clock to collect products and navigate obstacles.</li>
+                <li><strong>Special Items</strong>: Use strategic items to aid your progress and boost your score.</li>
+                <li><strong>Dynamic Obstacles</strong>: Encounter challenging obstacles that test your skills and add excitement.</li>
+                <li><strong>Online Scoreboard</strong>: Compete globally and track your progress on the online scoreboard.</li>
+            </ul>
+            <p>""Kubota Racer" offers fast-paced racing action with strategic elements, providing an engaging experience for players.</p>
+
+            <p> <br></p>
+            <h2>Kubota Farm (Oculus Quest)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G_AD09EZCCc?si=49JGAqh-pE1BhFdy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h3>About the Project</h3>
+            <p>"Kubota Farm" for Oculus Quest offers an immersive 360-degree video experience, allowing users to explore and learn about Kubota farms. With a friendly Kubota mascot as a guide, users can delve into the details of farm operations and equipment, all while enjoying a personalized journey.</p>
+            <h4>Key Features:</h4>
+            <ul>
+                <li><strong>360-Degree Video</strong>: Dive into the world of Kubota farms with immersive 360-degree videos, offering a lifelike and interactive experience.</li>
+                <li><strong>Kubota Mascot Guide</strong>: Interact with a charming Kubota mascot who provides information and insights about the farm, equipment, and operations.</li>
+                <li><strong>Personalized Content</strong>: The experience keeps track of user preferences and interests, tailoring the content to each user's preferences and displaying the most-watched videos.</li>
+                <li><strong>Rating System</strong>: Users can rate videos, helping to curate content and provide feedback for an improved viewing experience.</li>
+                <li><strong>Data Analytics</strong>: The system collects data on user preferences and viewing habits, allowing for continuous improvement and content optimization.</li>
+            </ul>
+            <p>"Kubota Farm" on Oculus Quest combines education and entertainment, offering a unique and engaging way to learn about Kubota farms and equipment.</p>
+        </div>
+
+        <p> <br></p>
+        <h2>Interactive House (WebGL)</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ziZmE3i6tOs?si=V1QKZGbDbGmM8h-_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>About the Project</h3>
+        <p>The WebGL project "Interactive House" offers a dynamic experience where users can customize and visualize different materials within a virtual house model. Through a user-friendly interface, users can select and apply various materials to different parts of the house, triggering animations and visual changes corresponding to their selections.</p>
+        <h4>Key Features:</h4>
+        <ul>
+            <li><strong>Interactive Material Selection</strong>: Choose from a range of materials such as wood, brick, marble, and more using an intuitive UI.</li>
+            <li><strong>Real-time Visualization</strong>: Witness instant visual changes as selected materials are applied to different components of the house model.</li>
+            <li><strong>Dynamic Animations</strong>: Experience dynamic animations that showcase how materials interact with light and environment, enhancing realism.</li>
+            <li><strong>Customization Options</strong>: Customize the appearance of walls, floors, roofs, and other elements within the house, allowing for creative exploration.</li>
+            <li><strong>User-Friendly Interface</strong>: The UI provides a seamless and easy-to-use experience, making material selection and customization accessible to all users.</li>
+        </ul>
+        <p>"Interactive House" leverages WebGL technology to deliver an engaging and interactive platform for users to explore material options and visualize their design preferences within a virtual environment.</p>
+        <p><br></p>
+        <p>While I've completed additional projects, I'm unable to disclose further details due to confidentiality agreements. However, rest assured that everything is in place and ready to go!</p>
+       
+        <a href="portfolio.html" class="back-button">Back to Portfolio</a>
+    
+    </div>
+
+    </div>
+      
+</body>
+</html>
