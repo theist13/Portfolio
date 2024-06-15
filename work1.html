@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #000; /* Background color set to black */
+            color: #fff; /* Text color set to white */
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #333; /* Slightly lighter background for the container */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+        .project {
+            margin-bottom: 40px;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .project h2 {
+            margin: 10px 0;
+        }
+        .project p {
+            margin: 10px 0;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: none; /* Hide all videos initially */
+        }
+        .video-container iframe.active {
+            display: block; /* Display only the active video */
+        }
+        .back-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .back-button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #f00; /* Red color for the message */
+        }
+    </style>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="project">
+            <h1>About Game Development Projects</h1>
+            <p>The game development projects undertaken within the university setting are primarily designed as study endeavors, aimed at providing students with a hands-on learning experience in various aspects of game development.</p>
+            <p> <br></p>
+            <h2>Stabilizer</h2>
+            <img src="images/Stabilizer_1.jpg" alt="Stabilizer">
+            <h3>About the Project</h3>
+            <p>The thesis project "Stabilizer" presents a shooter game where players engage in missions to shoot down enemy robots. Set in a dystopian world, the game offers a straightforward yet action-packed experience.</p>
+            <h4>Key Features:</h4>
+            <ul>
+                <li><strong>First-Person Camera System</strong>: Provides a smooth and immersive first-person camera experience, allowing players to fully engage with the game environment and action.</li>
+                <li><strong>AI Character Movement</strong>: Implements advanced AI pathfinding and behavior to create challenging and intelligent enemy robots. Utilizes root motion to ensure fluid and lifelike movement animations.</li>
+                <li><strong>Intuitive Controls</strong>: Designed for easy-to-learn, hard-to-master controls that allow for precise aiming and shooting mechanics in a first-person perspective.</li>
+                <li><strong>Mission-Based Gameplay</strong>: Players embark on various missions to shoot down enemy robots, each mission presenting unique challenges and objectives.</li>
+                <li><strong>Learning and Testing</strong>: Created as an educational tool to explore and understand advanced Unity features, including AI animation techniques and first-person camera mechanics. Designed to facilitate learning how to develop an FPS game for desktop platforms.</li>
+            </ul>
+            <p>"Stabilizer" aims to provide a comprehensive learning experience for those looking to delve into first-person shooter game development, while also offering a thrilling and engaging gameplay experience.</p>
+            <div class="video-container" id="video-container">
+                <iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/DMldrZ6cX44?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="active"></iframe>
+                <iframe id="video2" width="560" height="315" src="https://www.youtube.com/embed/4EynCFMFXEU?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <button class="button" id="toggle-video">Next Video</button>
+            <p class="message" id="video-message"></p>
+        </div>
+
+        <div class="project">
+            <h2>Untitle TPS Game</h2>
+            <img src="images/TPS.jpg" alt="Image for Work 2">
+            <h3>About the Project</h3>
+            <p>This project is developed as a learning and testing ground for implementing a third-person view camera system using Cinemachine, alongside AI character movement utilizing root motion for realistic animations.</p>
+            <h4>Key Features:</h4>
+            <ul>
+                <li><strong>Third-Person Camera System</strong>: Integrates Cinemachine for smooth and dynamic camera control, providing an immersive experience.</li>
+                <li><strong>AI Character Movement</strong>: Utilizes root motion to drive AI character animations, ensuring fluid and lifelike movement.</li>
+                <li><strong>Endless Gameplay</strong>: The game has an endless point system where the player shoots to reach a high score.</li>
+                <li><strong>Learning and Testing</strong>: Designed as an educational tool to explore and understand advanced Unity features, including Cinemachine and AI animation techniques, and to learn how to create a game in WebGL.</li>
+            </ul>
+            <a href="https://tps-game-demo.web.app/" target="_blank" class="button">Play</a>
+        </div>
+
+        <div class="project">
+            <h2>Zombie shooter</h2>
+            <img src="images/ZombieShooter.png" alt="Image for Work 2">
+            <h3>About the Project</h3>
+            <p>This project is developed as a learning and testing ground for implementing a top-down shooter game using Unity, with a focus on creating a dynamic camera system and AI-driven character movement.</p>
+
+            <a href="https://drive.google.com/file/d/1kl1ORpyRv-HiBb4_O_u-PNkrcRInXRR8/view?usp=sharing" target="_blank" class="button">Download</a>
+        </div>
+
+        <div class="project">
+            <h2>DeadMayhem</h2>
+            <img src="images/DeadMayhem.jpg" alt="Image for Work 2">
+            <h3>About the Project</h3>
+            <p>This project is developed as a learning and testing ground for implementing a third-person view camera system using Cinemachine, alongside AI character movement utilizing root motion for realistic animations.</p>
+            <h4>Key Features:</h4>
+            <ul>
+                <li><strong>Third-Person Camera System</strong>: Integrates Cinemachine for smooth and dynamic camera control, providing an immersive experience.</li>
+                <li><strong>AI Character Movement</strong>: Utilizes root motion to drive AI character animations, ensuring fluid and lifelike movement.</li>
+                <li><strong>Learning and Testing</strong>: Designed as an educational tool to explore and understand advanced Unity features, including Cinemachine and AI animation techniques.</li>
+            </ul>
+            <a href="https://drive.google.com/file/d/1pJwEQ6qSZmo7937jIjqT3hJ2PkSaegBo/view?usp=sharing" target="_blank" class="button">Download</a>
+        </div>
+
+        <a href="portfolio.html" class="back-button">Back to Portfolio</a>
+    </div>
+    
+    <script>
+        let player1, player2;
+
+        function onYouTubeIframeAPIReady() {
+            player1 = new YT.Player('video1', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+            player2 = new YT.Player('video2', {
+                events: {
+                    'onReady': onPlayerReady
+                }
+            });
+        }
+
+        function onPlayerReady(event) {
+            updateMessage(); // Initial message update when players are ready
+        }
+
+        const toggleButton = document.getElementById('toggle-video');
+        const videos = document.querySelectorAll('iframe');
+        const messageElement = document.getElementById('video-message');
+
+        let currentIndex = 0;
+
+        toggleButton.addEventListener('click', () => {
+            if (currentIndex === 0) {
+                player1.pauseVideo();
+                player2.playVideo();
+            } else {
+                player2.pauseVideo();
+                player1.playVideo();
+            }
+            videos[currentIndex].classList.remove('active');
+            currentIndex = (currentIndex + 1) % videos.length;
+            videos[currentIndex].classList.add('active');
+            updateMessage();
+        });
+
+        function updateMessage() {
+            messageElement.textContent = `Video ${currentIndex + 1}/${videos.length}`;
+        }
+    </script>
+</body>
+</html>
