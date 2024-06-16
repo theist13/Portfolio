@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,12 +8,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!--Montserrat font-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="css/dropdown.css" />
     <script src="https://unpkg.com/feather-icons@4.28.0/dist/feather.min.js"></script>
     <!--script src="js/languagesystem.js"></script--> 
     <script src="js/language.js"></script> 
+    <style>
+      .return-button {
+          display: inline-block;
+          margin: 20px 0;
+          padding: 10px 20px;
+          font-size: 16px;
+          color: #fff;
+          background-color: #28a745;
+          border: none;
+          border-radius: 5px;
+          text-decoration: none;
+          cursor: pointer;
+      }
+      .return-button:hover {
+          background-color: #218838;
+      }
+      .dropdown {
+          position: relative;
+          display: inline-block;
+      }
+      .dropbtn {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px 20px;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          transition: background-color 0.3s;
+      }
+      .dropbtn:hover, .dropbtn:focus {
+          background-color: #45a049;
+      }
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          border-radius: 5px;
+      }
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          border-radius: 5px;
+      }
+      .dropdown-content a:hover {
+          background-color: #f1f1f1;
+      }
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+    </style>
   </head>
   <body onload="SetLanguge('eng')">   
     <!--body onload="function1()"-->
@@ -37,22 +92,18 @@
         <div>
         <br>
           <!--  Dropdown Section -->
-            <div class="colored_button_div">
-               <div id = "dropdown" class="dropdown">
-                   <a class="dropbtn">Lang : ENG</a>
-                    <div class="dropdown-content">
-        <!-- <a href="#">Link 1</a>
-        <a href="#">Link 2</a>
-        <a href="#">Link 3</a> -->
-           <!-- Dropdown Item Section -->
-                    <a onclick="SetLanguge('th')">TH</a>
-                    <a onclick="SetLanguge('eng')">ENG</a>
-                    </div> 
+          <div class="colored_button_div">
+             <div class="dropdown">
+               <button class="dropbtn">Lang : ENG</button>
+               <div class="dropdown-content">
+                 <a onclick="SetLanguge('th')">TH</a>
+                 <a onclick="SetLanguge('eng')">ENG</a>
                </div>
-            </div>
+             </div>
+          </div>
           </div>
         <img src="images/myProfile.jpg" class="w3-circle w3-border w3-border-sand" style="border-width: 3px !important;"/>
-        <SCIAL NETWORK BUTTONS
+        <!--SOCIAL NETWORK BUTTONS-->
         <div class="links w3-margin-top w3-padding-small">
           <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.facebook.com/profile.php?viewas=100000686899395&id=100001731206772" target="_blank">
               <i data-feather="facebook"></i>
@@ -66,7 +117,7 @@
           <a class="icon-link w3-text-sand w3-hover-text-amber" href="https://www.linkedin.com/in/arayan-khumngoen-991304288/" target="_blank">
              <i data-feather="linkedin"></i>
           </a>
-        </div> >
+        </div>
         <!--CV DOWNLOAD BUTTON
         <div class="w3-container w3-padding-16">
           <a href="./resume.pdf" class="w3-amber w3-hover-amber w3-button w3-round-small w3-hover-deep-orange w3-padding-large" target="_blank" download="resume.pdf">
@@ -74,6 +125,12 @@
             <span class="w3-margin-left download-text">DOWNLOAD CV</span>
           </a>
         </div> -->
+
+        <!-- Return to Main Menu Button -->
+        <div class="w3-container w3-padding-16">
+          <a href="index.html" class="return-button">Return to Main Menu</a>
+        </div>
+
       </section>
 
       <!--CV CONTENT SECTION-->
@@ -94,29 +151,23 @@
           </div>
 
           <!--ABOUT SECTION-->
-          <div id="about" class="w3-container w3-margin-top-20-percent w3-cursive w3-large">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT</h2>
-            <p class="w3-margin-top-2"> 
-            </p>
+          <div id="about" class="w3-container w3-margin-top-4 w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">ABOUT ME</h2>
+            <p id="about-text">retrieving "ABOUT ME" data</p>
           </div>
 
-          <!--RESUME-->
-          <div id="resume" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">RESUME</h2>
-          </div>    
-            <div class="w3-container w3-margin-top-2 w3-cursive">
-
-              <!--EMPLOYMENT HISTORY SECTION-->
-              <div id="employment">
-              <h3 class="w3-border-amber">retrieving "MY EMPLOYMENT HISTORY" data</h3>
-              <div class="" >
-                <!-- ul class="w3-ul" style="font-weight: 500;">
-                  <li>Develop VR(occulus quest2) program for touring kubota farm <a href="https://youtu.be/G_AD09EZCCc"> VIDEO Link</a> </li>
+          <!--RESUME SECTION-->
+          <div id="resume" class="w3-container w3-margin-top-2 w3-cursive">
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY RESUME</h2>
+            <div id="resume-content">
+                <ul id="project-list">
+                  <li>Develop website for project “Kubota showcase project” <a href="https://docs.google.com/document/d/1btziZebVBGroHMMhxC7_ZQaVYdHSN1av/edit?usp=share_link&ouid=111693469333532232647&rtpof=true&sd=true"> Information Link</a> <a href="https://youtu.be/2ABuOKvP4VQ"> VIDEO Link</a></li>
+                  <li>Develop AR App for project "KUBOTA AR" <a href="https://youtu.be/baNE5yW_INRoo"> VIDEO Link</a></li>
                   <li>Develop minigame (racing game with steering wheel)for kubota game booth<a href="https://youtu.be/51RhuHT-1Sw"> VIDEO Link</a></li>
                   <li>Develop 3D website for project Housematerial phase II <a href="https://youtu.be/ziZmE3i6tOs"> VIDEO Link</a> </li>
                   <li>Develop Denso Project <a href="https://docs.google.com/document/d/1mZUPM-NK8g1xQCNaIUjgkeAz0apz-K2v7ql0Z2t02OQ/edit?usp=share_link"> Information Link</a> </li>
                   <li>Develop Portal Project <a href="https://docs.google.com/document/d/1TsS1sOxbcEjXQ9atpVdYxeqWRRaa1k6aTZj11bZ55K0/edit?usp=share_link"> Information Link</a> </li>
-                </ul --> 
+                </ul>
             </div>
             </div>
 
@@ -135,7 +186,7 @@
             </div>
           <!--CONTACT SECTION-->
           <div id="contact" class="w3-container w3-margin-top-20-percent w3-cursive">
-            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h3>
+            <h2 class="w3-border-bottom w3-border-amber" style="border-width: 3px !important;">MY CONTACT DETAILS</h2>
           </div>
             <div class="w3-margin-top-2" style="font-weight: 500;">
               <p>Name: Arayan Khumngoen</p>
@@ -143,15 +194,15 @@
               <p>Phone number: 061-4536653</p>
               <p>E-mail:arayan.khumngoen@gmail.com</p>
           </div>
-
-        <!--FOOTER-->
-        <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. 
-        <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
-          <p>© 2021 - John Doe</p>
-           <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
-          <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> -->
-        <!-- End footer -->
-        <!--FOOTER </footer> -->
+          
+          <!--FOOTER-->
+          <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. 
+          <footer class="w3-container w3-border-top w3-center w3-margin-top-4">
+            <p>© 2021 - John Doe</p>
+             <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+            <a class="w3-button w3-round-xxlarge w3-small w3-light-grey" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> -->
+          <!-- End footer -->
+          <!--FOOTER </footer> -->
 
         <!--END OF CV SECTION-->
       </section>      
