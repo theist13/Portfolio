@@ -7,8 +7,7 @@
             "job": "Full Stack Developer",
             "detail": [
                 "Developed a web chat platform integrated with Facebook and Line for message handling, with an admin system to manage client assignments and save chat data",
-                "Built a document generator to automate PDF creation for tax receipts, payroll, and registration documents.",
-                "Integrated Puppeteer for efficient PDF generation and improved document handling."
+                "Built a document generator to automate PDF creation for tax receipts, payroll, and registration documents."
             ]
         },
         {
