@@ -2,8 +2,18 @@
     "title": "MY EMPLOYMENT HISTORY",
     "employment": [
         {
+            "company": "Full Stack Developer at Softel Comunications (Thailand)",
+            "time": "July 2024 - Present",
+            "job": "Full Stack Developer",
+            "detail": [
+                "Developed a web chat platform integrated with Facebook and Line for message handling, with an admin system to manage client assignments and save chat data",
+                "Built a document generator to automate PDF creation for tax receipts, payroll, and registration documents.",
+                "Integrated Puppeteer for efficient PDF generation and improved document handling."
+            ]
+        },
+        {
             "company": "Unity Developer at Ringzero Game Studio",
-            "time": "January 2023 - May 2023",
+            "time": "January 2023 - May 2024",
             "job": "Unity Developer",
             "detail": [
                 "Contributed to the development of games from concept to release,focusing on gameplay mechanics, UI/UX, and performance optimization.",
